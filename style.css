@@ -1,0 +1,319 @@
+/** CSS Reset **/
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/******** CSS Style Begin ********/
+
+/** Variables **/
+
+:root {
+    --color-background: #fff;
+    --color-headers: #fff;
+    --color-maintext: #000;
+    --color-headertext: #7eb786;
+    --color-headertexthover: #57b25b;
+    --color-button: #99c6dd;
+    --color-buttonhover: #50aed3;
+    --color-buttontext: #fff;
+    --color-buttontexthover: #fff;
+    --color-mainlinkhov: #99c6dd;
+
+    --content-height: 350px;
+}
+
+/** Box Model **/
+
+header {
+    height: var(--header-height);
+    width: 80%;
+    margin: auto;
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+}
+
+main {
+    margin: auto;
+}
+
+.column {
+    float: left;
+}
+
+.row {
+    clear: both;
+    overflow: auto;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33%;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    background-image: url('Images/Footer Texture.png');
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 50px 0px 40px 0px;
+    text-align: center;
+    color: #fff; 
+}
+
+/** Styling **/
+
+header h1 {
+      padding: 75px 0px;
+      font-size: 75px;
+      font-family: 'Nunito', sans-serif;
+      text-align: center;
+}
+
+header h1 a {
+      text-decoration: none;
+      color: var(--color-headertext);
+}
+
+header h1 a:hover {
+      text-decoration: none;
+      color: var(--color-headertexthover);
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+}
+
+nav li {
+      white-space: nowrap;
+      display: inline;
+      padding-left: 0px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 23px;
+      text-transform: uppercase;
+  }
+
+.button li{
+      background-image: url('Images/Button Texture.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      display: inline-table;
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      table-layout: fixed;
+      vertical-align: middle;
+      margin: 0px 40px 40px 40px;
+      list-style-type: none;
+      border-radius: 50%;
+}
+
+.button li:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+}
+
+.button li a {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--color-buttontext);
+      text-decoration: none;
+      display: inline-table;
+      width: 100px;
+      height: 100px;
+      vertical-align: middle;
+}
+
+.texture {
+}
+
+h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      text-transform: capitalize;
+      text-align: center;
+      margin: 15px 0px;
+      font-weight: 700;
+      color: var(--color-headertext);
+}
+
+p {
+      margin-bottom: 10px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+}
+
+img {
+      width: 100%;
+}
+/**
+      position: relative;
+      float: left;
+      width: 27.85714285714286%;
+      padding: 0 0 32.16760145166612% 0;
+      -o-transform: rotate(-60deg) skewY(30deg);
+      -moz-transform: rotate(-60deg) skewY(30deg);
+      -webkit-transform: rotate(-60deg) skewY(30deg);
+      -ms-transform: rotate(-60deg) skewY(30deg);
+      transform: rotate(-60deg) skewY(30deg);
+      overflow: hidden;
+      visibility: hidden;
+}
+
+#button {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#button li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fdbf00;
+    -o-transform: skewY(-30deg) rotate(60deg);
+    -moz-transform: skewY(-30deg) rotate(60deg);
+    -webkit-transform: skewY(-30deg) rotate(60deg);
+    -ms-transform: skewY(-30deg) rotate(60deg);
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+}
+
+#button li * {
+    visibility: visible;
+}
+
+**/
+
+/** Helper **/
+
+.marginbottom {
+    margin-bottom: 10px;
+}
+
+.margintop {
+    margin-top: 10px;
+}
+
+.marginmiddler {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.marginmiddlel {
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.floatright {
+    float: right;
+}
+
+.imgsmall {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.textright {
+    text-align: right;
+}
+
+.addpadding {
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.heighthalf {
+    height: calc(var(--content-height)/2) !important;
+}
+
+.heightfull {
+    height: auto !important;
+}
+
+.showhidden {
+    z-index: 1000000;
+}
+
+/******* Responsive *******/
+
+/** Desktop Viewing **/
+@media screen and (min-width: 800px) {
+
+}
+
+/** Mobile Viewing **/
+@media screen and (max-width: 800px) {
+
+
+}
