@@ -69,13 +69,18 @@ table {
 
 header {
     height: var(--header-height);
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
+#header-content {
+  margin-bottom: 70px;
+}
+
 #container {
-    width: 75%;
+    width: 60%;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 main {
@@ -88,7 +93,7 @@ main {
 
 .row {
     clear: both;
-    overflow: auto;
+    overflow: visible;
 }
 
 .col-12 {
@@ -111,9 +116,9 @@ footer {
 }
 
 footer p {
-    margin: 50px 0px 40px 0px;
+    padding-top: 50px;
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
 
 /** Styling **/
@@ -142,7 +147,7 @@ nav li {
       display: inline;
       padding-left: 0px;
       font-family: 'Nunito', sans-serif;
-      font-size: 23px;
+      font-size: 16px;
       text-transform: uppercase;
   }
 
@@ -153,14 +158,13 @@ nav li {
       background-repeat: no-repeat;
       border: none;
       display: inline-table;
-      width: 100px;
-      height: 100px;
-      padding: 20px;
       table-layout: fixed;
-      vertical-align: middle;
-      margin: 0px 40px 40px 40px;
+      width: 150px;
+      height: 150px;
+      margin: 0px 30px 30px 0px;
       list-style-type: none;
       border-radius: 50%;
+      line-height: 150px;
 }
 
 .button li:hover {
@@ -181,9 +185,6 @@ nav li {
       vertical-align: middle;
 }
 
-.texture {
-}
-
 h2 {
       font-family: 'Nunito', sans-serif;
       font-size: 20px;
@@ -194,62 +195,33 @@ h2 {
       color: var(--color-headertext);
 }
 
+h3 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 18px;
+      text-transform: capitalize;
+      text-align: left;
+      margin: 18px 0px 10px 0px;
+      font-weight: 700;
+      color: var(--color-button);
+}
+
 p {
       margin-bottom: 10px;
       font-family: 'Lato', sans-serif;
       font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+}
+
+p b {
+      font-weight: 700;
+      color: #666; 
 }
 
 img {
       width: 100%;
+      overflow: visible;
 }
-/**
-      position: relative;
-      float: left;
-      width: 27.85714285714286%;
-      padding: 0 0 32.16760145166612% 0;
-      -o-transform: rotate(-60deg) skewY(30deg);
-      -moz-transform: rotate(-60deg) skewY(30deg);
-      -webkit-transform: rotate(-60deg) skewY(30deg);
-      -ms-transform: rotate(-60deg) skewY(30deg);
-      transform: rotate(-60deg) skewY(30deg);
-      overflow: hidden;
-      visibility: hidden;
-}
-
-#button {
-    position: relative;
-    width: 60%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-#button li .hexagon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fdbf00;
-    -o-transform: skewY(-30deg) rotate(60deg);
-    -moz-transform: skewY(-30deg) rotate(60deg);
-    -webkit-transform: skewY(-30deg) rotate(60deg);
-    -ms-transform: skewY(-30deg) rotate(60deg);
-    transform: skewY(-30deg) rotate(60deg);
-    overflow: hidden;
-}
-
-#button li * {
-    visibility: visible;
-}
-
-**/
 
 /** Helper **/
 
