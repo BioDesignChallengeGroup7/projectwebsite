@@ -93,10 +93,23 @@ footer {
 }
 
 footer p {
-    padding-top: 50px;
+    padding: 50px 10px;
     text-align: center;
     color: #fff;
     font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
 }
 
 /** Styling **/
